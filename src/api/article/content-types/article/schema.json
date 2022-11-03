@@ -19,11 +19,6 @@
     "published": {
       "type": "date"
     },
-    "slug": {
-      "type": "string",
-      "required": false,
-      "unique": true
-    },
     "content": {
       "type": "text"
     },
@@ -38,6 +33,11 @@
     },
     "author": {
       "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
       "required": true
     }
   }
