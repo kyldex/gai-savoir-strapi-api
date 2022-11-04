@@ -19,9 +19,6 @@
     "published": {
       "type": "date"
     },
-    "content": {
-      "type": "text"
-    },
     "excerpt": {
       "type": "text"
     },
@@ -39,6 +36,9 @@
       "type": "uid",
       "targetField": "title",
       "required": true
+    },
+    "content": {
+      "type": "richtext"
     }
   }
 }
