@@ -3,6 +3,7 @@ import { prefixPluginTranslations } from '@strapi/helper-plugin';
 import pluginPkg from '../../package.json';
 import pluginId from './pluginId';
 import Initializer from './components/Initializer';
+import PreviewLink from './components/PreviewButton';
 import PluginIcon from './components/PluginIcon';
 
 const name = pluginPkg.strapi.name;
@@ -39,7 +40,12 @@ export default {
     app.registerPlugin(plugin);
   },
 
-  bootstrap(app) {},
+  bootstrap(app) {
+    app.injectContentManagerComponent('editView', 'right-links', {
+      name: 'preview-button',
+      Component: PreviewLink
+    })
+  },
   async registerTrads(app) {
     const { locales } = app;
 
