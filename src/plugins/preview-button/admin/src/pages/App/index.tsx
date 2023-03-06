@@ -11,7 +11,7 @@ import { NotFound } from '@strapi/helper-plugin';
 import pluginId from '../../pluginId';
 import HomePage from '../HomePage';
 
-const App: React.VoidFunctionComponent = () => {
+const App: React.FC = () => {
   return (
     <div>
       <Switch>
