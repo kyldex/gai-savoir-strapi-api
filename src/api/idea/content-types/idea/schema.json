@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "articles",
+  "collectionName": "ideas",
   "info": {
-    "singularName": "article",
-    "pluralName": "articles",
-    "displayName": "Articles",
-    "description": ""
+    "singularName": "idea",
+    "pluralName": "ideas",
+    "displayName": "Idées"
   },
   "options": {
     "draftAndPublish": true
@@ -21,12 +20,6 @@
     },
     "excerpt": {
       "type": "text"
-    },
-    "comments": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::comment.comment",
-      "mappedBy": "article"
     },
     "author": {
       "type": "string",
