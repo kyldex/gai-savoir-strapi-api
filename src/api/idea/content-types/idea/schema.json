@@ -4,7 +4,8 @@
   "info": {
     "singularName": "idea",
     "pluralName": "ideas",
-    "displayName": "Idées"
+    "displayName": "Idées",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -32,6 +33,16 @@
     },
     "content": {
       "type": "richtext"
+    },
+    "card_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
