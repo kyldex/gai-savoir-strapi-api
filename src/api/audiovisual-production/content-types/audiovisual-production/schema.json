@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "audiovisual_productions",
+  "info": {
+    "singularName": "audiovisual-production",
+    "pluralName": "audiovisual-productions",
+    "displayName": "Production Audiovisuelle",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "excerpt": {
+      "type": "text"
+    },
+    "published": {
+      "type": "date"
+    },
+    "gai_savoir_production": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "video_url": {
+      "type": "string",
+      "required": true
+    },
+    "card_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}
