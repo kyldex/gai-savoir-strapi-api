@@ -45,7 +45,7 @@
         "audios"
       ]
     },
-    "content_new": {
+    "content_components": {
       "type": "dynamiczone",
       "components": [
         "content.image",
