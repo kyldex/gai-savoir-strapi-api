@@ -35,14 +35,22 @@
       "type": "richtext"
     },
     "card_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "content_new": {
+      "type": "dynamiczone",
+      "components": [
+        "content.image",
+        "content.text"
+      ]
     }
   }
 }
