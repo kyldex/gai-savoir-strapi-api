@@ -49,7 +49,8 @@
       "type": "dynamiczone",
       "components": [
         "content.image",
-        "content.text"
+        "content.text",
+        "content.carousel"
       ]
     }
   }
