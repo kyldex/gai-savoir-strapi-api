@@ -1,8 +1,8 @@
 # Gai Savoir Strapi API
 
-Gai Savoir website back-end, made with Strapi and Postgres.
-About : https://www.gai-savoir.fr/apropos
-Front-end : https://github.com/kyldex/gai-savoir-frontend
+Gai Savoir website back-end, made with Strapi and Postgres.  
+About : https://www.gai-savoir.fr/apropos  
+Front-end : https://github.com/kyldex/gai-savoir-frontend  
 
 ## Dev
 
