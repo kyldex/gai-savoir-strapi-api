@@ -49,6 +49,12 @@
     },
     "content": {
       "type": "richtext"
+    },
+    "subcategory": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::subcategory.subcategory",
+      "inversedBy": "audiovisual_productions"
     }
   }
 }
