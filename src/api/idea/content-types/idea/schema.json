@@ -4,7 +4,7 @@
   "info": {
     "singularName": "idea",
     "pluralName": "ideas",
-    "displayName": "Idées",
+    "displayName": "Articles",
     "description": ""
   },
   "options": {
@@ -52,6 +52,12 @@
         "content.text",
         "content.carousel"
       ]
+    },
+    "subcategory": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::subcategory.subcategory",
+      "inversedBy": "articles"
     }
   }
 }
