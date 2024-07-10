@@ -4,7 +4,8 @@
   "info": {
     "singularName": "category",
     "pluralName": "categories",
-    "displayName": "Catégories"
+    "displayName": "Catégories",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,6 +22,11 @@
       "relation": "oneToMany",
       "target": "api::subcategory.subcategory",
       "mappedBy": "category"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
     }
   }
 }
