@@ -15,6 +15,7 @@
     "@strapi/plugin-users-permissions": "4.10.8",
     "@strapi/provider-upload-cloudinary": "4.10.8",
     "@strapi/strapi": "4.10.8",
+    "node-fetch": "2.7.0",
     "pg": "8.11.1"
   },
   "author": {
@@ -24,7 +25,7 @@
     "uuid": "f046fcb3-0658-44a8-bf01-1a4148d25fb5"
   },
   "engines": {
-    "node": "18.x || 20.x",
+    "node": "16.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT"

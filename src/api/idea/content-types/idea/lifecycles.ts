@@ -1,3 +1,8 @@
+const fetch = require('node-fetch');
+
+// Remove fetch polyfill dependency after upgrading to Node 18.
+global.fetch = fetch;
+
 const ARTICLE_DEFAULT_CATEGORY = 'articles';
 
 export default {
