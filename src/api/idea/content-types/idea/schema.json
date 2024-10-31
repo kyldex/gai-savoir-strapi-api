@@ -53,6 +53,12 @@
         "content.carousel"
       ]
     },
+    "category": {
+      "type": "string",
+      "default": "articles",
+      "configurable": false,
+      "visible": false
+    },
     "subcategory": {
       "type": "relation",
       "relation": "manyToOne",

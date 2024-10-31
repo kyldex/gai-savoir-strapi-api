@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "migrations",
+  "info": {
+    "singularName": "migration",
+    "pluralName": "migrations",
+    "displayName": "Migration",
+    "description": "Table for tracking executed migrations"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "content-manager": {
+      "visible": false
+    },
+    "content-type-builder": {
+      "visible": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "executed_at": {
+      "type": "datetime",
+      "default": null
+    }
+  }
+}
