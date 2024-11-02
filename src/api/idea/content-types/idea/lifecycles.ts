@@ -6,8 +6,16 @@ global.fetch = fetch;
 const ARTICLE_DEFAULT_CATEGORY = 'articles';
 
 export default {
+  // Enbale Next.js ISR for a given published article.
+  // Make a request to Next.js app revalidate API endpoint after being updated.
   async afterUpdate(event) {
     const { result } = event;
+
+    // Next.js ISR only works if the article has already been published.
+    if (!result.publishedAt) {
+      console.log(`Skipping Next.js ISR for unpublished article: ${result.slug}`);
+      return;
+    }
 
     // Fetch the idea with subcategory populated.
     const idea = await strapi.db.query('api::idea.idea').findOne({
