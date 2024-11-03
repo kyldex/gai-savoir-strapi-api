@@ -50,6 +50,12 @@
     "content": {
       "type": "richtext"
     },
+    "category": {
+      "type": "string",
+      "default": "production-audiovisuelle",
+      "configurable": false,
+      "visible": false
+    },
     "subcategory": {
       "type": "relation",
       "relation": "manyToOne",
