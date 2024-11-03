@@ -1,6 +1,6 @@
 import revalidateFrontEndPage from '../../../../shared/services/revalidateFrontEndPage';
 
-const ARTICLE_DEFAULT_CATEGORY = 'articles';
+const ARTICLE_DEFAULT_CATEGORY = 'production-audiovisuelle';
 
 export default {
   async afterUpdate(event) {
@@ -9,7 +9,8 @@ export default {
       contentTypeItemId: result.id,
       contentTypeItemSlug: result.slug,
       contentTypeItemPublishedAt: result.publishedAt,
-      contentTypeItemDatabaseQuery: 'api::idea.idea',
+      contentTypeItemDatabaseQuery:
+        'api::audiovisual-production.audiovisual-production',
       contentTypeItemDefaultCategory: ARTICLE_DEFAULT_CATEGORY
     });
   }
