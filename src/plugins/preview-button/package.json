@@ -7,19 +7,19 @@
     "description": "Description of preview-button plugin",
     "kind": "plugin"
   },
-  "devDependencies": {
-    "typescript": "4.6.3"
+  "dependencies": {
+    "typescript": "5.2.2"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Raphael Giagnorio"
   },
   "maintainers": [
     {
-      "name": "A Strapi developer"
+      "name": "Raphael Giagnorio"
     }
   ],
   "engines": {
-    "node": "16.x",
+    "node": "18.x || 20.x",
     "npm": ">=6.0.0"
   },
   "scripts": {
