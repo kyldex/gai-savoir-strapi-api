@@ -1,8 +1,3 @@
-const fetch = require('node-fetch');
-
-// Remove fetch polyfill dependency after upgrading to Node 18.
-global.fetch = fetch;
-
 type Args = {
   contentTypeItemId: number;
   contentTypeItemSlug: string;

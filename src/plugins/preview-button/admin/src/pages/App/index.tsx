@@ -7,9 +7,12 @@
 
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import { NotFound } from '@strapi/helper-plugin';
 import pluginId from '../../pluginId';
 import HomePage from '../HomePage';
+
+const NotFound: React.FC = () => {
+  return <div>Page Not Found</div>;
+};
 
 const App: React.FC = () => {
   return (
