@@ -45,12 +45,12 @@ The admin account creation page should open automatically in your browser (if no
 Then stop the local server and import the test data:
 
 ```bash
-npm run strapi import -- -f ./data/products_data_demo.tar.gz.enc --key products
+npm run strapi import -- -f ./data/dev_data.tar.gz.enc --key gaisavoir
 ```
 
-Restart the server and the test products should appear in the back office.  
+Restart the server and the test articles should appear in the back office.  
 
-Check in the back office Settings, in Users & Permissions plugin > Roles > Public, that the permissions for `Product` are enabled for `find` and `findOne`.
+Check in the back office Settings, in Users & Permissions plugin > Roles > Public, that the needed permissions are enabled for `find` and `findOne`.
 
 ## Production
 
