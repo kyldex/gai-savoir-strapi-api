@@ -26,13 +26,14 @@ npm install
 ```
 
 #### Configuration :  
-Create a `.env` file at the root of the project using the `.env.example` example. SQLite is used for the development database. You can keep the same values for `HOST`, `PORT`, `DATABASE_CLIENT` and `DATABASE_FILENAME`. For the others, you can generate random keys using :
+Create a `.env` file at the root of the project using the `.env.example` example. You can keep the same values for `HOST`, `PORT`, `STRAPI_ADMIN_CLIENT_API_URL`, and `STRAPI_ADMIN_CLIENT_FRONTEND_URL`. For `APP_KEYS`, `API_TOKEN_SALT`, `ADMIN_JWT_SECRET`, `TRANSFER_TOKEN_SALT` and `JWT_SECRET`, you can generate random keys using :
 
 ```bash
 openssl rand -base64 16
 ```
-
 Note that you need 2 keys separated by a comma for the `APP_KEYS` variable.  
+
+Ensure PostgreSQL is installed and running on your machine. Set the database variables values, the shared variable values with the front-end Next.js app, as well as the Cloudinary ones.  
 
 Start the development server locally with :
 
